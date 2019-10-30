@@ -1,50 +1,48 @@
-
-
 .login-form {
-    width: 470px;
-    height: 565px;
-    position: absolute;
+    width: 500px;
+    height: 300px;
+    position: relative;
     padding: 10px 10px;
-    background: #000;
-    left: 60%;
-    top: 15%;
+    background: white;
+    left: 30%;
+    top: 100%;
     transform: translateX(-50%) translateY(-50%);
-    border-bottom: 5px solid gray;
-    border-radius: 20px;
+  border-radius: 12px !important;
+  box-shadow: 3px 3px;
+    border-width: medium;
+  border-color: #89ccc7;
     display: flex;
     flex-direction: column; 
-    z-index: 1;
+  z-index: 5;
+  align-content: center;
 }
 
 .login-face {
     width: 150px;
     height: 160px;
-    left: -185px;
+    left: 175px;
     position: relative;
     margin: -80px auto;
-    top: 125px;
+    top: 150px;
 }
 
 .login-face>img {
-    width: 235px !important;
-    height: 240px !important;
+    width: 200px !important;
+    height: 165px !important;
     overflow: hidden !important;
     -webkit-transition: -webkit-transform .8s ease-in-out !important;
     transition: transform .8s ease-in-out !important;
     left: 50px !important;
 }
 
-.login-face>img:hover
-{
-    -webkit-transform: rotate(360deg) !important;
-          transform: rotate(360deg) !important;
-}
+
 
 .form
 {
     width: 100%;
-    position: relative;
-    margin: 25px auto;
+  margin-top: 25% auto;
+  right: 50%;
+ 
 
 }
 
@@ -52,10 +50,9 @@
 {
     width: 56%;
     height: 50px;
-    background: #006b8e;
+    background: white;
     position: relative;
-    margin: 10px auto;
-    float: right;
+    margin: 50px auto;
 
 
 }
@@ -70,15 +67,15 @@ input[type="email"]
     border: 2px solid #ddd !important;
     border-radius: 10px !important;
     font-size: 16px !important;
-    font-family: 'Roboto', sans-serif !important;
-    padding-left: 10px !important;
-    color: black !important;
+    font-family: 'Poppins', sans-serif !important;
+    padding-left: 5px !important;
+    color: #89ccc7 !important;
 }
 
 .fa
 {
     position: absolute !important;
-    right: 5px !important;
+    right: 0px !important;
     top: 0px !important;
     padding-top: 12px !important;
     color: gray !important;
@@ -87,22 +84,27 @@ input[type="email"]
 input[type="text"]:focus,
 input[type="email"]:focus
 {
-    border: 2px solid #0AC986 !important;
+    border: 2px solid #89ccc7 !important;
 }
 
 input[type="submit"]
 {
-    position: relative !important;
+    position: fixed !important;
     width: 55% !important;
     height: 50px !important;
-    background: #fd5c21 !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 18px !important;
-    color: #fff !important;
+    background: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+    color: #89ccc7 !important;
     outline: none !important;
+  border-style:solid !important;
+  	border-width: 1px !important;
+  	border-color: #89ccc7 !important;
     border-radius: 12px !important;
-    float: right !important;
-    padding-left: 20px !important;
+    float: center !important;
+    padding-left: 11px !important;
+  top: 75%;
+  left: 22.5%;
 }
 
 input[type="submit"]:hover
@@ -112,13 +114,13 @@ input[type="submit"]:hover
 
 div#submitForm {
     position: relative !important;
-    top: 100px !important;
+    top: 50px !important;
+  left: 20%;
 }
 
 .input:hover 
 {
     position: relative !important;
-    animation: shake 1s !important;
 }
 
 @keyframes shake
@@ -146,21 +148,21 @@ div#submitForm {
 #promotion-header
 {
     position: relative;
-    left: 225px;
-    top: 15px;
+    left: 100px;
+    top: 5px;
     padding-top: 0px;
 }
 
 #promotion-header-title {
-    text-align: left;
+    text-align: center;
     font-family: Montserrat;
+    text-shadow: 3px;
     font-weight: bold;
-    color: #fd5c21;
-    font-size: 30px;
+    color: #89ccc7;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0px; 
-    /*padding-left: 30px !important;*/
     width: 55%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -168,16 +170,16 @@ div#submitForm {
 
 #promotion-body {
     position: relative;
-    left: 225px;
+    left: 0px;
     top: 0px;
     padding-top: 0px;
 }
 
 #promotion-body-text
 {
-    text-align:left;
+    text-align: center;
     font-family:Montserrat;
-    color:#FFFFFF;
+    color:#89ccc7;
     font-size:14px;
     font-weight:400;
     line-height:1.3;
@@ -197,7 +199,7 @@ div#submitForm {
 {
     text-align:left;
     font-family:Montserrat;
-    color:#FFFFFF;
+    color:#89ccc7;
     font-size:10px;
     font-weight:300;
     line-height:1.2;
@@ -208,16 +210,14 @@ div#submitForm {
 }
 
 .popupCloseButton {
-    background-color: #fff !important;
-    border: 3px solid #999 !important;
-    border-radius: 50px !important;
+    background-color: none !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-family: arial !important;
     font-weight: bold !important;
     position: absolute !important;
-    top: -20px !important;
-    right: -20px !important;
+    top: 0px !important;
+    right: 0px !important;
     font-size: 25px !important;
     line-height: 30px !important;
     width: 30px !important;

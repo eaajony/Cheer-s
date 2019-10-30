@@ -8,27 +8,19 @@ function newsletter_form()
     $content .= '<div class="login-form">';
     $content .= '<div class="popupCloseButton">X</div>';
     $content .= '<div class="login-face">';
-    $content .= '<img src=" '.plugins_url("cheers-comp/cheers-lagt-ned.jpg").' " ';
+    $content .= '<img src=" '.plugins_url("cheers-comp/mads-fra-cheers.png").' " ';
     $content .= 'alt="login-face"></div>';
     $content .= '<div id="promotion-header">';
-    $content .= '<h1 id="promotion-header-title">LETS GET FUCKED</h1></div>';
+    $content .= '<h1 id="promotion-header-title">MODTAG EN RABATKODE PÅ 10%! <br> INDTAST DIN E-MAIL!</h1></div>';
     $content .= '<section class="form">';
     $content .= '<form action="#">';
     $content .= '<div id="promotion-body">';
-    $content .= '<p id="promotion-body-text">Timeld dig for unikke oplevelser med Cheers!</p>';
     $content .= '</div>';
     $content .= '<div class="input">';
-    $content .= '<input type="text" id="username" placeholder="Mads Holmgren" name="username" required><i class="fa fa-user fa-1x"></i>';
-    $content .= '</div>';
-    $content .= '<div class="input">';
-    $content .= '<input type="email" id="email" placeholder="madsholmgren@cheers.com" name="email" required><i class="fa fa-envelope fa-1x"></i>';
+    $content .= '<input type="email" id="email" placeholder="email@cheers.com" name="email" required><i class="fa fa-envelope fa-1x"></i>';
     $content .= '</div>';
     $content .= '<div id="submitForm">';
-    $content .= '<input type="submit" id="submitBtn" name="submitBtn" value="Tilmeld dig til unikke oplevelser med Cheers!">';
-    $content .= '</div>';
-    $content .= '<div id="promotion-footer">';
-    $content .= '<p id="promotion-footer-text">Ja tak, jeg vil gerne deltage i unikke oplevelser med Cheers!</p>';
-    $content .= '</div>';
+    $content .= '<input type="submit" id="submitBtn" name="submitBtn" value="Klik her, når du har indtastet din E-mail!">';
     $content .= '</form>';
     $content .= '</section>';
     $content .= '</div>';
@@ -46,11 +38,11 @@ function newsletter_form()
         
         wp_enqueue_style('CustomFontMontserrat','https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap');
         
-        wp_enqueue_style('CustomFontRoboto','https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+        wp_enqueue_style('CustomFontPoppins','https://fonts.googleapis.com/css?family=Poppins&display=swap');
         
-        wp_enqueue_style('CustomStylesheet', plugins_url('cheers-comp/style.css'));
+        wp_enqueue_style('CustomStylesheet', plugins_url('cheers-comp/style123.css'));
         
-        wp_deregister_script('jquery');
+        wp_deregister_script('jquery'); 
         
         wp_enqueue_script('jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
         
