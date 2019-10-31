@@ -1,6 +1,12 @@
 <?php
 /**
 *Plugin Name: Cheers-comp
+*Plugin URI: https://nicolinegrand.dk/cheers
+*Description: This is a WordPress Newsletter Plugin based on HTML5, CSS, JS and PHP
+*Version: 1. 5.6
+*Author: Johannes Nysted
+*Author URI: https://nicolinegrand.dk/cheers
+*License: GPL2
 **/
 function newsletter_form()
 {
@@ -42,9 +48,6 @@ function newsletter_form()
         
         wp_enqueue_style('CustomStylesheet', plugins_url('cheers-comp/style123.css'));
         
-        wp_deregister_script('jquery'); 
-        
-        wp_enqueue_script('jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
         
         wp_enqueue_script('CustomScript', plugins_url('cheers-comp/script.js'), array('jquery'), null, true);
     }
